@@ -3,6 +3,12 @@
 ## 👥 Integrantes
 - Farid Salomón – Comisión 5 
 
+## Materia
+- Programacion I
+
+## Docente
+- Profesora: Cinthia Rigoni
+
 ## 📹 Link YOUTUBE
 - https://youtu.be/vj-7blXKu6k
 
@@ -10,7 +16,7 @@
 - https://github.com/turkaym/UTN-TUPaD-P1/tree/main/12%20Datos%20Avanzados
 
 ## 🏫 Comisión
-Este proyecto se presenta para la Comisión [número de comisión] de la materia Programación I.
+Este proyecto se presenta para la Comisión 5 de la materia Programación I.
 
 ## 📘 Presentación del Tema
 En este trabajo práctico integrador abordamos la implementación y manipulación de **árboles binarios** en Python utilizando **listas anidadas** como única estructura de datos. El objetivo es entender de forma práctica cómo funcionan las operaciones básicas (inserción, recorridos, búsqueda y análisis) sin apoyarnos en clases u objetos, sino únicamente en construcciones de listas.
