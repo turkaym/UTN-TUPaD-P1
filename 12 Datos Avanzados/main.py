@@ -1,29 +1,86 @@
 from arbol_listas import crear_arbol, insertar_izquierda, insertar_derecha, imprimir_arbol
 from utilidades_arbol import inorden, preorden, postorden, buscar, altura, nivel_por_nivel
 
+
+def menu():
+    print("\nOpciones:")
+    print("1. Insertar nodo")
+    print("2. Imprimir árbol")
+    print("3. Recorridos (inorden, preorden, postorden)")
+    print("4. Buscar un valor")
+    print("5. Altura del árbol")
+    print("6. Recorrido por niveles")
+    print("0. Salir")
+
+
+def buscar_nodo(arbol, valor):
+    """Busca el nodo con ese valor y lo retorna (referencia)."""
+    if arbol is None:
+        return None
+    if arbol[0] == valor:
+        return arbol
+    izquierdo = buscar_nodo(arbol[1], valor)
+    if izquierdo:
+        return izquierdo
+    return buscar_nodo(arbol[2], valor)
+
+
 if __name__ == "__main__":
-    # 1. Creamos la raíz
-    raiz = crear_arbol(10)
+    raiz = None
 
-    # 2. Hijos de la raíz
-    insertar_izquierda(raiz, 5)
-    insertar_derecha(raiz, 15)
+    while True:
+        menu()
+        opcion = input("Seleccione una opción: ")
 
-    # 3. Nietos de la raíz (hijos de 5)
-    insertar_izquierda(raiz[1], 3)
-    insertar_derecha(raiz[1], 7)
+        if opcion == "1":
+            valor = int(input("Ingrese el valor a insertar: "))
+            if raiz is None:
+                raiz = crear_arbol(valor)
+                print("Raíz creada.")
+            else:
+                padre = int(input("Ingrese el valor del nodo padre: "))
+                direccion = input(
+                    "¿Insertar a la izquierda (i) o derecha (d)?: ").lower()
+                nodo_padre = buscar_nodo(raiz, padre)
+                if nodo_padre:
+                    if direccion == "i":
+                        insertar_izquierda(nodo_padre, valor)
+                        print(f"{valor} insertado a la izquierda de {padre}.")
+                    elif direccion == "d":
+                        insertar_derecha(nodo_padre, valor)
+                        print(f"{valor} insertado a la derecha de {padre}.")
+                    else:
+                        print("Dirección inválida.")
+                else:
+                    print("Nodo padre no encontrado.")
 
-    # 4. Hijos de 15
-    insertar_izquierda(raiz[2], 17)
-    insertar_derecha(raiz[2], 20)
+        elif opcion == "2":
+            if raiz:
+                imprimir_arbol(raiz)
+            else:
+                print("El árbol está vacío.")
 
-    # 5. Visualizamos el árbol y usamos utilidades
-    print("Impresión del árbol:")
-    imprimir_arbol(raiz)
+        elif opcion == "3":
+            if raiz:
+                print("Inorden:", inorden(raiz))
+                print("Preorden:", preorden(raiz))
+                print("Postorden:", postorden(raiz))
+            else:
+                print("El árbol está vacío.")
 
-    print("Inorden:", inorden(raiz))
-    print("Preorden:", preorden(raiz))
-    print("Postorden:", postorden(raiz))
-    print("Buscar 7:", buscar(raiz, 7))
-    print("Altura:", altura(raiz))
-    print("Por niveles:", nivel_por_nivel(raiz))
+        elif opcion == "4":
+            valor = int(input("Valor a buscar: "))
+            encontrado = buscar(raiz, valor)
+            print(f"Resultado: {'Sí' if encontrado else 'No'}")
+
+        elif opcion == "5":
+            print("Altura del árbol:", altura(raiz))
+
+        elif opcion == "6":
+            print("Recorrido por niveles:", nivel_por_nivel(raiz))
+
+        elif opcion == "0":
+            print("Programa finalizado.")
+            break
+        else:
+            print("Opción inválida. Intente nuevamente.")

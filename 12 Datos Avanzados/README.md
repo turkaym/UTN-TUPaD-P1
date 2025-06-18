@@ -2,6 +2,7 @@
 
 ## 👥 Integrantes
 - Farid Salomón – Comisión 5 
+- Gabriel Gonzalez - Comisión 7
 
 ## Materia
 - Programacion I
@@ -10,9 +11,9 @@
 - Profesora: Cinthia Rigoni
 
 ## 📹 Link YOUTUBE
-- https://youtu.be/vj-7blXKu6k
+- 
 
-## Link de githun
+## Link de github
 - https://github.com/turkaym/UTN-TUPaD-P1/tree/main/12%20Datos%20Avanzados
 
 ## 🏫 Comisión

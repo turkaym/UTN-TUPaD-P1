@@ -1,3 +1,4 @@
+# arbol_listas.py
 """
 Módulo principal: define la estructura básica del árbol y sus operaciones.
 """

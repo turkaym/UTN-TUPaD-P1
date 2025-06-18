@@ -1,3 +1,4 @@
+# utilidades_arbol.py
 """
 Módulo de utilidades: recorridos, búsqueda y análisis.
 """
