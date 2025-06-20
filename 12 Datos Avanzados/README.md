@@ -8,10 +8,10 @@
 - Programacion I
 
 ## Docente
-- Profesora: Cinthia Rigoni
+- Profesor/a: Cinthia Rigoni, Bruselario Sebastian
 
 ## 📹 Link YOUTUBE
-- 
+- https://youtu.be/DUlZ7GSR_uk?si=wAytBREHG-gzhkkE
 
 ## Link GoogleDrive
 - https://drive.google.com/drive/folders/1Yt8p1oe4uqVFllhyhb-fpPEhIvPHnv53?usp=sharing
