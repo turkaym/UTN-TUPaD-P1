@@ -13,7 +13,7 @@
 ## 📹 Link YOUTUBE
 - https://youtu.be/DUlZ7GSR_uk?si=wAytBREHG-gzhkkE
 
-## Link GoogleDrive
+## Link GoogleDrive: archivo PDF, PowerPoint y capturas de pantalla del código
 - https://drive.google.com/drive/folders/1Yt8p1oe4uqVFllhyhb-fpPEhIvPHnv53?usp=sharing
 
 ## Link de github
